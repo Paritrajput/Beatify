@@ -4,9 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useMusicPlayer } from "@/ContextApi/playContext";
 import { useUser } from "@/ContextApi/userContext";
-import Loading from "@/Components/Loading/loading";
 
-/* ---------------- THEMES ---------------- */
 
 const PLAYLIST_THEMES = [
   {
@@ -97,7 +95,7 @@ const PlaylistDetail = ({ params }) => {
     fetchPlaylist();
   }, [myplaylistid]);
 
-  if (loading) return <Loading />;
+
   if (error || !playlist)
     return <div className="p-6 text-red-500">{error}</div>;
 
