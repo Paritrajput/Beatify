@@ -1,9 +1,9 @@
 "use client";
 import { useUser } from "@/ContextApi/userContext";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const PolicyPopup = () => {
-  const { showPolicy, setShowPolicy, togglePolicy } = useUser();
+  const { showPolicy, setShowPolicy } = useUser();
 
   return (
     <div className=" ">

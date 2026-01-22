@@ -2,7 +2,6 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import React from "react";
 
 // components/Playlists.js
 const Playlists = () => {

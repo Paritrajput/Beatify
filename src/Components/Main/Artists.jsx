@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import React from "react";
 const Artists = () => {
   const [artists, setArtists] = useState([]);
   const [loading, setLoading] = useState(true);

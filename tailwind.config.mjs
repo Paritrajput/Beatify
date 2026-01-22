@@ -7,19 +7,14 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        ss: "500px",
+        ml: "900px",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-    },
-    screens: {
-      ml: "900px",
-
-      lg: "1024px",
-
-      md: "768px",
-
-      ss: "500px",
     },
   },
   plugins: [],

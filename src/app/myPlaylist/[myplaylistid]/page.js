@@ -48,7 +48,7 @@ const getThemeByPlaylistId = (id) => {
   return PLAYLIST_THEMES[Math.abs(hash) % PLAYLIST_THEMES.length];
 };
 
-/* ---------------- COMPONENT ---------------- */
+
 
 const PlaylistDetail = ({ params }) => {
   const { myplaylistid } = params;

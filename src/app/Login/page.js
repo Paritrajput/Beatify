@@ -2,7 +2,7 @@
 import { useUser } from "@/ContextApi/userContext";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -10,12 +10,11 @@ function Login() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const { isLoggedIn, setIsLoggedIn } = useUser();
- const router = useRouter();
+  const router = useRouter();
   const login = async (e) => {
     e.preventDefault();
     setLoading(true);
     setError("");
-     
 
     const response = await fetch("/Api/login", {
       method: "POST",
@@ -44,8 +43,13 @@ function Login() {
 
   return (
     <div className="min-h-screen flex flex-col items-center bg-gradient-to-b from-gray-800 to-black">
-    <nav className="w-full flex items-center h-15 bg-gray-900 p-5">
-        <img src="/logo_beatify.png" alt="Beatify Logo" className="h-14  ml-10" onClick={() => router.push("/")}/>
+      <nav className="w-full flex items-center h-15 bg-gray-900 p-5">
+        <img
+          src="/logo_beatify.png"
+          alt="Beatify Logo"
+          className="h-14  ml-10"
+          onClick={() => router.push("/")}
+        />
       </nav>
 
       <div className="my-12 w-[90%] ss:w-[70%] md:w-5/12 bg-gray-900 flex flex-col items-center rounded-lg py-10 p-5">

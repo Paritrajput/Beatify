@@ -2,8 +2,6 @@
 import { useEffect, useState } from "react";
 import AddNewArtists from "./AddNew";
 import AddExistingArtists from "./AddExisting";
-import { useUser } from "@/ContextApi/userContext";
-import ManageArtistSongs from "./AddExisting";
 
 const addArtists = () => {
   const { newPlaylistAdmin, setNewPlaylistAdmin } = useUser();

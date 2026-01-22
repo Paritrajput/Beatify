@@ -1,6 +1,6 @@
 "use client";
 import { useUser } from "@/ContextApi/userContext";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const LanguagePopup = () => {
   const { showPopup, setShowPopup } = useUser();

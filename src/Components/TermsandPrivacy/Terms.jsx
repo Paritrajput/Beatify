@@ -1,9 +1,9 @@
 "use client";
 import { useUser } from "@/ContextApi/userContext";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const TermsPopup = () => {
-  const { showTerms, setShowTerms, toggleTerms } = useUser();
+  const { showTerms, setShowTerms } = useUser();
 
   return (
     <div className=" ">

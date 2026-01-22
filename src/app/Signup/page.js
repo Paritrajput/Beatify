@@ -1,13 +1,13 @@
 "use client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function SignUp() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-    const router = useRouter();
+  const router = useRouter();
 
   const register = async (e) => {
     e.preventDefault();
@@ -31,7 +31,12 @@ export default function SignUp() {
   return (
     <div className="flex flex-col items-center bg-gradient-to-b from-gray-800 to-black min-h-screen">
       <nav className="w-full flex items-center h-15 bg-gray-900 p-5">
-        <img src="/logo_beatify.png" alt="Beatify Logo" className="h-14  ml-10" onClick={() => router.push("/")}/>
+        <img
+          src="/logo_beatify.png"
+          alt="Beatify Logo"
+          className="h-14  ml-10"
+          onClick={() => router.push("/")}
+        />
       </nav>
 
       <div className="w-[90%] ss:w-[70%] md:w-5/12 bg-gray-900 flex flex-col items-center rounded-lg py-10 my-12 p-5">

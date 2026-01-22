@@ -1,7 +1,6 @@
 "use client";
 
 import NavBar from "@/Components/Header/Header";
-import Footer from "@/Components/Player/musicPlayer";
 import MyLibrary from "@/Components/MyLibrary/MyLibrary";
 import { useMusicPlayer } from "@/ContextApi/playContext";
 import PlayControl from "@/Components/Player/musicPlayer";
