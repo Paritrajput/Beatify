@@ -1,6 +1,6 @@
 "use client";
 import AddNewArtists from "./AddNew";
-
+import AddExistingArtists from "./AddExisting";
 import { useUser } from "@/ContextApi/userContext";
 
 const addArtists = () => {
@@ -13,7 +13,7 @@ const addArtists = () => {
           AddSongsToExistingArtists
         </li>
       </ul>
-      <div>{newPlaylistAdmin ? <AddNewArtists /> : <ManageArtistSongs />}</div>
+      <div>{newPlaylistAdmin ? <AddNewArtists /> : <AddExistingArtists />}</div>
     </div>
   );
 };
